@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>First Page</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="close()">
+        Close
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-nav-link router-direction="forward" [component]="component">
+    <ion-button>Navigate</ion-button>
+  </ion-nav-link>
+</ion-content>
