@@ -1,11 +1,10 @@
 import { Component, OnInit, viewChild } from '@angular/core';
-import { IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonContent, IonFab, IonFabButton, IonFooter, IonHeader, IonIcon, IonLabel, IonModal, IonNav, IonTab, IonTabBar, IonTabButton, IonTabs, IonTitle, IonToolbar } from '@ionic/angular/standalone';
-import { OverlayEventDetail } from '@ionic/core/components';
-import { OverlaypageComponent } from '../overlaypage/overlaypage.component';
+import { IonBadge, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle,
+   IonCardTitle, IonContent, IonFab, IonFabButton, IonHeader, IonIcon, IonModal, IonNav, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
-import { OverlaynextpageComponent } from '../overlaynextpage/overlaynextpage.component';
 import { ModalfirstpageComponent } from '../modalfirstpage/modalfirstpage.component';
-
+import { addIcons } from 'ionicons';
+import { notifications } from 'ionicons/icons';
 @Component({
   selector: 'app-firstpage',
   templateUrl: './firstpage.component.html',
@@ -14,7 +13,7 @@ import { ModalfirstpageComponent } from '../modalfirstpage/modalfirstpage.compon
     IonHeader, IonToolbar, IonTitle, IonContent,
     IonCard, IonCardHeader, IonCardTitle, IonCardContent,
     IonButton, IonCardSubtitle, IonIcon, IonButtons,
-    IonNav, IonModal, IonFabButton, IonFab
+    IonNav, IonModal, IonFabButton, IonFab, IonBadge
   ],
 })
 export class FirstpageComponent  implements OnInit {
@@ -23,7 +22,9 @@ export class FirstpageComponent  implements OnInit {
 
   constructor(
     private router: Router,
-  ) { }
+  ) {
+    addIcons({ notifications });
+  }
 
   ngOnInit() {}
 

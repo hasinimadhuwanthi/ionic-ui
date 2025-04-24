@@ -1,0 +1,15 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title slot="start">Date & Time : Localization</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+  <ion-modal [keepContentsMounted]="true">
+    <ng-template>
+      <ion-datetime locale="de-DE" id="datetime"></ion-datetime>
+    </ng-template>
+  </ion-modal>
+</ion-content>

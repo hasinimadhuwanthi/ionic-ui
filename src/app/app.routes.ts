@@ -35,6 +35,10 @@ export const routes: Routes = [
       {
         path: 'overlaynextpage',
         loadComponent: () => import('./overlaynextpage/overlaynextpage.component').then((m) => m.OverlaynextpageComponent),
+      },
+      {
+        path: 'thirdpage',
+        loadComponent: () => import('./thirdpage/thirdpage.component').then((m) => m.ThirdpageComponent),
       }
     ]
   },
