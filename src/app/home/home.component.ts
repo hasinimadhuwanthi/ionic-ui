@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IonIcon, IonTab, IonTabBar, IonTabButton, IonTabs } from '@ionic/angular/standalone';
 
 import { addIcons } from 'ionicons';
-import { add, library, playCircle, radio, search, settings } from 'ionicons/icons';
+import { add, call, library, person, playCircle, radio, search, settings } from 'ionicons/icons';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +13,7 @@ import { add, library, playCircle, radio, search, settings } from 'ionicons/icon
 export class HomeComponent  implements OnInit {
 
   constructor() {
-    addIcons({ library, playCircle, radio, search, settings, add });
+    addIcons({ library, playCircle, radio, search, settings, add, person, call });
   }
 
   ngOnInit() {}

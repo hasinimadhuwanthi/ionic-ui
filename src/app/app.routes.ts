@@ -13,6 +13,20 @@ export const routes: Routes = [
       {
         path: 'secondpage',
         loadComponent: () => import('./secondpage/secondpage.component').then((m) => m.SecondpageComponent),
+        children: [
+          {
+            path: '',
+            loadComponent: () => import('./tabone/tabone.component').then((m) => m.TaboneComponent),
+          },
+          {
+            path: 'one',
+            loadComponent: () => import('./tabone/tabone.component').then((m) => m.TaboneComponent),
+          },
+          {
+            path: 'two',
+            loadComponent: () => import('./tabtwo/tabtwo.component').then((m) => m.TabtwoComponent),
+          },
+        ],
       },
       {
         path: 'overlaypage',
